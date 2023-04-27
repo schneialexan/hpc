@@ -37,7 +37,6 @@ start = time.time()
 times_parallel = [time_function(parallel_sum, n) for n in nums]
 print(f'DONE! Time: {time.time() - start}s')
 
-
 plt.plot(nums, times_iterative, label='Iterative')
 plt.plot(nums, times_parallel, label='Parallel')
 plt.title('Laufzeitvergleich')
